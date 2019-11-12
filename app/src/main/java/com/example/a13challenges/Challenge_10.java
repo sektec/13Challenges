@@ -7,7 +7,8 @@ public class Challenge_10 {
         System.out.print("Enter a number: ");
         int num = input.nextInt();
 
-        for (int i = 1; i <= num; i++){
+        for (int i = 1; i <= num; i++) {
             System.out.print(i + " ");
+        }
     }
 }
