@@ -157,8 +157,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="output"
-        tools:layout_editor_absoluteX="182dp"
-        tools:layout_editor_absoluteY="559dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.764" />
 
     <EditText
         android:id="@+id/entry"
@@ -167,7 +171,10 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="input"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="603dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.861" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
