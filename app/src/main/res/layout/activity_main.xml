@@ -152,4 +152,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.655" />
 
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="output"
+        tools:layout_editor_absoluteX="182dp"
+        tools:layout_editor_absoluteY="559dp" />
+
+    <EditText
+        android:id="@+id/entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="input"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="603dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
