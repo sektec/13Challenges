@@ -13,8 +13,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public static void main(String[]args){
-        Scanner input = new Scanner.(System.in);
-        String num = input.nextLine();
-        Schroga.eight(num);
+        Schroga.eleven("20 21 22");
     }
 }

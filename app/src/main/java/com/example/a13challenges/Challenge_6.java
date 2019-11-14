@@ -17,4 +17,3 @@ public class Challenge_6 {
             System.out.println("Reversed Number: " + reversed);
         }
     }
-}
