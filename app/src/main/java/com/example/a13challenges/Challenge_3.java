@@ -47,5 +47,3 @@ public class Challenge_3 {
         System.out.println("The product of " + a + " multiplied by " + b + " is " + (a*b));
     }
 }
-
-}

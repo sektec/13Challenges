@@ -22,5 +22,3 @@ public class Challenge_12 {
                 System.out.println("This is not a palindrome");
         }
     }
-
-}
