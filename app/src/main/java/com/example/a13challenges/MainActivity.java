@@ -13,6 +13,5 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public static void main(String[]args){
-        Schroga.eleven("20 21 22");
     }
 }

@@ -1,10 +1,11 @@
 package com.example.a13challenges;
 
 public class Schroga {
-    public static void two(int num) {
-        if (num < 0 || num > 9) System.exit(0);
-        if (num < 5) System.out.println(num + " is less than 5.");
-        else if (num > 5) System.out.println(num + " is more than 5.");
+    public static void two(String num) {
+        int num1 = Integer.parseInt(num);
+        if (num1 < 0 || num1 > 9) System.exit(0);
+        if (num1 < 5) System.out.println(num + " is less than 5.");
+        else if (num1 > 5) System.out.println(num + " is more than 5.");
         else System.out.println(num + " is equal to 5.");
     }
 
