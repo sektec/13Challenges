@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
         EditText num = findViewById(R.id.Num_Ent_1);
         int num1 = Integer.parseInt(String.valueOf(num));
         if (num1 < 0 || num1 > 9) System.exit(0);
-        if (num1 < 5) System.out.println(num1 + " is less than 5.");
-        else if (num1 > 5) System.out.println(num1 + " is more than 5.");
+        if (num1 < 5) display.setText(num1 + " is less than 5.");
+        else if (num1 > 5) display.setText(num1 + " is more than 5.");
         else display.setText(num1 + " is equal to 5.");
     }
     public static void five(String num){
