@@ -25,9 +25,12 @@ public class MainActivity extends AppCompatActivity {
         else if (num1 > 5) display.setText(num1 + " is more than 5.");
         else display.setText(num1 + " is equal to 5.");
     }
-    public static void five(String num){
-        String num2[] = num.split(" ");
-        System.out.println(num2[1] + " " + num2[0]);
+    public void five(View view){
+        TextView display = findViewById(R.id.display);
+        EditText num = findViewById(R.id.Num_Ent_1);
+        String num1 = num.toString();
+        String [] num2 = num1.split(" ");
+        display.setText(num2[1] + " " + num2[0]);
     }
     public static void eight(String num){
         char [] num2 = num.toCharArray();
