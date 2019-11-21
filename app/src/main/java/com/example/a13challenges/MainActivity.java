@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
         Button B2 = findViewById(R.id.Challenge2B);
         TextView display = findViewById(R.id.display);
     }
+    public static void main(String[]args){
+    }
     public void two(View view){
         TextView display = findViewById(R.id.display);
         EditText num = findViewById(R.id.Num_Ent_1);
