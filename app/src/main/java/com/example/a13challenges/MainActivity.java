@@ -34,17 +34,23 @@ public class MainActivity extends AppCompatActivity {
         String [] num2 = num1.split(" ");
         display.setText(num2[1] + " " + num2[0]);
     }
-    public static void eight(String num){
-        char [] num2 = num.toCharArray();
+    public void eight(View view){
+        TextView display = findViewById(R.id.display);
+        EditText num = findViewById(R.id.Num_Ent_1);
+        String num1 = num.toString();
+        char [] num2 = num1.toCharArray();
         double total = 0;
         for (int i = num.length(); i > 0; i--){
             if (num2[i] != '1' || num2[i] != '0') System.exit(1);
             total = total + (i ^ 2);
         }
-        System.out.println(total);
+        display.setText(total + "");
     }
-    public static void eleven(String num){
-        String num2[] = num.split(" ");
+    public void eleven(View view){
+        TextView display = findViewById(R.id.display);
+        EditText num = findViewById(R.id.Num_Ent_1);
+        String num1 = num.toString();
+        String num2[] = num1.split(" ");
         System.out.println(num2[1]);
     }
 }
