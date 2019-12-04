@@ -23,8 +23,6 @@ public class Challenge_7 {
         else {
             System.out.print("0");
         }
-
-
         if (num >= 16){
             num -= 16;
             System.out.print("1");
