@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
     static int p=0;
     static int i=0;
+    static double t=0;
 
     public void two(View view){
         TextView display = findViewById(R.id.display);
@@ -70,6 +71,20 @@ public class MainActivity extends AppCompatActivity {
         String [] num2 = num1.split(" ");
         display.setText(num2[1] + " " + num2[0]);
     }
+    public void C6(View view){
+        TextView tV3 = findViewById(R.id.display);
+        EditText num = findViewById(R.id.Num_Ent_1);
+
+        p = Integer.parseInt(num.getText().toString());
+        int inNum = p;
+        int reversed = 0;
+        while (inNum!=0){
+            int single = inNum % 10;
+            reversed = reversed * 10 + single;
+            inNum/=10;
+        }
+        tV3.setText("Reversed Number: " + reversed);
+    }
     public void eight(View view){
         TextView display = findViewById(R.id.display);
         EditText num = findViewById(R.id.Num_Ent_1);
@@ -82,11 +97,57 @@ public class MainActivity extends AppCompatActivity {
         }
         display.setText(total + "");
     }
+    public void c9(View view){
+        TextView tV = findViewById(R.id.display);
+        EditText eT = findViewById(R.id.Num_Ent_1);
+        EditText eT2 = findViewById(R.id.Num_Ent_2);
+
+        t = Double.parseDouble(eT.getText().toString());
+        p = Integer.parseInt(eT2.getText().toString());
+        //Enter The degree of fahrenheit or celsius
+        double D = t;
+        //Fahrenheit to celsius type '1' ; Celsius to Fahrenheit type '2'");
+        int T = p;
+
+        switch (T){
+            case 1 :
+                tV.setText("The conversion from Fahrenheit to Celsius of "
+                        + D + " is " + ((D - 32) * 5/9));
+                break;
+            case 2 :
+                tV.setText("The conversion from Celsius to Fahrenheit of "
+                        + D + " is " + ((D * 9/5) + 32));
+                break;
+            default:
+                tV.setText("Bruh!?!?");
+                System.exit(1);
+                break;
+        }
+    }
     public void eleven(View view){
         TextView display = findViewById(R.id.display);
         EditText num = findViewById(R.id.Num_Ent_1);
         String num1 = num.toString();
         String num2[] = num1.split(" ");
         System.out.println(num2[1]);
+    }
+    public void c12(View view){
+        TextView tV = findViewById(R.id.display);
+        EditText num = findViewById(R.id.Num_Ent_1);
+
+        p = Integer.parseInt(num.getText().toString());
+        int nume = p;
+        int counter1 = 0;
+        int original = nume;
+
+        while (nume>0){
+            int single = nume % 10;
+            counter1 = (counter1 * 10) + single;
+            nume/=10;
+        }
+        if (original == counter1)
+            tV.setText("This is a palindrome");
+        else
+            tV.setText("This is not a palindrome");
     }
 }
