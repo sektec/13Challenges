@@ -19,23 +19,23 @@ public class MainActivity extends AppCompatActivity {
     static int i = 0;
     static double t = 0;
 
-    //Challenge 1 button function
+    //Challenge 1 button function, displays 'hello world' on output
     public void c1 (View view){
         TextView textView = findViewById(R.id.display);
         textView.setText("Hello World");
     }
 
-    //challenge 2 button function
-    public void c2(View view){//Best of five
+    //challenge 2 button function, checks if what a number is in relation to 5
+    public void c2(View view){
         TextView display = findViewById(R.id.display);
         EditText num = findViewById(R.id.entry);
-        int num1 = Integer.parseInt(String.valueOf(num));
+        int num1 = Integer.parseInt(num.getText().toString());
         if (num1 < 5) display.setText(num1 + " is less than 5.");
         else if (num1 > 5) display.setText(num1 + " is more than 5.");
         else display.setText(num1 + " is equal to 5.");
     }
 
-    //challenge 3 button function
+    //challenge 3 button function, does 4 types of math for 2 numbers (add, sub, div, mul)
     public void C3(View view) {
         TextView tV3 = findViewById(R.id.display);
         TextView tV4 = findViewById(R.id.display1);
@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
         tV6.setText("The product of " + a + " multiplied by " + b + " is " + (a * b));
     }
 
-    //Challenge 4 button function
+    //Challenge 4 button function, prints text 'GeeksforGeeks' specified number of times
     public void c4 (View view) {
         TextView textView = findViewById(R.id.display);
         EditText numEditText = findViewById(R.id.Num_Ent_1);
@@ -87,32 +87,32 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    //challenge 5 button function
-        public void c5(View view){//Number swap
-            TextView display = findViewById(R.id.display);
-            EditText num = findViewById(R.id.entry);
-            String num1 = num.toString();
-            String [] num2 = num1.split(" ");
-            display.setText(num2[1] + " " + num2[0]);
+    //challenge 5 button function, swaps 2 numbers from a single input
+    public void c5(View view){
+        TextView display = findViewById(R.id.display);
+        EditText num = findViewById(R.id.entry);
+        String num1 = num.toString();
+        String [] num2 = num1.split(" ");
+        display.setText(num2[1] + " " + num2[0]);
+    }
+
+    //challenge 6 button function, reverses a number from an input
+    public void C6(View view){
+        TextView tV3 = findViewById(R.id.display);
+        EditText num = findViewById(R.id.Num_Ent_1);
+
+        p = Integer.parseInt(num.getText().toString());
+        int inNum = p;
+        int reversed = 0;
+        while (inNum!=0){
+            int single = inNum % 10;
+            reversed = reversed * 10 + single;
+            inNum/=10;
         }
+        tV3.setText("Reversed Number: " + reversed);
+    }
 
-        //challenge 6 button function
-        public void C6(View view){
-            TextView tV3 = findViewById(R.id.display);
-            EditText num = findViewById(R.id.Num_Ent_1);
-
-            p = Integer.parseInt(num.getText().toString());
-            int inNum = p;
-            int reversed = 0;
-            while (inNum!=0){
-                int single = inNum % 10;
-                reversed = reversed * 10 + single;
-                inNum/=10;
-            }
-            tV3.setText("Reversed Number: " + reversed);
-        }
-
-    //Challenge 7 button function
+    //Challenge 7 button function, changes a number to its binary form
     public void c7 (View view) {
         TextView textView = findViewById(R.id.display);
         EditText numEditText = findViewById(R.id.Num_Ent_1);
@@ -179,9 +179,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    //challenge 8 button function
-    public void c8(View view){//Binary to Decimal
-
+    //challenge 8 button function, takes a number in binary form and converts to decimal
+    public void c8(View view){
         TextView display = findViewById(R.id.display);
         EditText num = findViewById(R.id.entry);
         String num1 = num.toString();
@@ -194,7 +193,7 @@ public class MainActivity extends AppCompatActivity {
         display.setText(total + "");
     }
 
-    //challenge 9 button function
+    //challenge 9 button function, converts degree of celsius to fahrenheit or vice versa
     public void c9(View view){
         TextView tV = findViewById(R.id.display);
         EditText eT = findViewById(R.id.Num_Ent_1);
@@ -202,11 +201,8 @@ public class MainActivity extends AppCompatActivity {
 
         t = Double.parseDouble(eT.getText().toString());
         p = Integer.parseInt(eT2.getText().toString());
-        //Enter The degree of fahrenheit or celsius
         double D = t;
-        //Fahrenheit to celsius type '1' ; Celsius to Fahrenheit type '2'");
         int T = p;
-
         switch (T){
             case 1 :
                 tV.setText("The conversion from Fahrenheit to Celsius of "
@@ -223,7 +219,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    //challenge 10 button function
+    //challenge 10 button function, takes a number and counts from 1 up to the given number
     public void c10 (View view) {
         TextView textView = findViewById(R.id.display);
         EditText numEditText = findViewById(R.id.Num_Ent_1);
@@ -234,8 +230,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    //challenge 11 button function
-    public void c11(View view){//Middle of three
+    //challenge 11 button function, takes in 3 different numbers and takes the one in middle
+    public void c11(View view){
         TextView display = findViewById(R.id.display);
         EditText num = findViewById(R.id.entry);
         String num1 = num.toString();
@@ -243,7 +239,7 @@ public class MainActivity extends AppCompatActivity {
         display.setText(num2[1]);
     }
 
-    //challenge 12 button function
+    //challenge 12 button function, checks if a number is a palindrome or not
     public void c12(View view){
         TextView tV = findViewById(R.id.display);
         EditText num = findViewById(R.id.Num_Ent_1);
