@@ -17,7 +17,12 @@
         app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.09"
+        android:onClick="c1"/>
+
         app:layout_constraintVertical_bias="0.019" />
+
 
     <Button
         android:id="@+id/Challenge2B"
@@ -56,7 +61,11 @@
         app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.427" />
+
         app:layout_constraintVertical_bias="0.284" />
+
 
     <Button
         android:id="@+id/Challenge5B"
@@ -96,7 +105,12 @@
         app:layout_constraintHorizontal_bias="0.442"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.089"
+        android:onClick="c7"/>
+
         app:layout_constraintVertical_bias="0.196" />
+
 
     <Button
         android:id="@+id/Challenge8B"
@@ -135,7 +149,12 @@
         app:layout_constraintHorizontal_bias="0.873"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.427"
+        android:onClick="c10"/>
+
         app:layout_constraintVertical_bias="0.109" />
+
 
     <Button
         android:id="@+id/Challenge11B"
@@ -173,7 +192,8 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.764" />
+        app:layout_constraintVertical_bias="0.764"
+        android:inputType="textMultiLine"/>
 
     <TextView
         android:id="@+id/display1"
