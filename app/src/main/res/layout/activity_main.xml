@@ -17,18 +17,13 @@
         app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-
-        app:layout_constraintVertical_bias="0.09"
-        android:onClick="c1"/>
-
-        app:layout_constraintVertical_bias="0.019" />
-
+        app:layout_constraintVertical_bias="0.023" />
 
     <Button
         android:id="@+id/Challenge2B"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="two"
+        android:onClick="c2"
         android:text="#2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,17 +56,13 @@
         app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-
-        app:layout_constraintVertical_bias="0.427" />
-
         app:layout_constraintVertical_bias="0.284" />
-
 
     <Button
         android:id="@+id/Challenge5B"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="five"
+        android:onClick="c5"
         android:text="#5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -105,18 +96,13 @@
         app:layout_constraintHorizontal_bias="0.442"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-
-        app:layout_constraintVertical_bias="0.089"
-        android:onClick="c7"/>
-
         app:layout_constraintVertical_bias="0.196" />
-
 
     <Button
         android:id="@+id/Challenge8B"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="eight"
+        android:onClick="c8"
         android:text="#8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -138,6 +124,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.019" />
 
+
     <Button
         android:id="@+id/Challenge10B"
         android:layout_width="wrap_content"
@@ -149,18 +136,13 @@
         app:layout_constraintHorizontal_bias="0.873"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-
-        app:layout_constraintVertical_bias="0.427"
-        android:onClick="c10"/>
-
         app:layout_constraintVertical_bias="0.109" />
-
 
     <Button
         android:id="@+id/Challenge11B"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="eleven"
+        android:onClick="c11"
         android:text="#11"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
