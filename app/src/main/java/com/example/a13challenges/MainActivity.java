@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     }
     static int p = 0;
     static int i = 0;
+    static int k = 0;
     static double t = 0;
 
     //Challenge 1 button function, displays 'hello world' on output
@@ -90,10 +91,13 @@ public class MainActivity extends AppCompatActivity {
     //challenge 5 button function, swaps 2 numbers from a single input
     public void c5(View view){
         TextView display = findViewById(R.id.display);
-        EditText num = findViewById(R.id.entry);
-        String num1 = num.toString();
-        String [] num2 = num1.split(" ");
-        display.setText(num2[1] + " " + num2[0]);
+        EditText num = findViewById(R.id.Num_Ent_1);
+        EditText num1 = findViewById(R.id.Num_Ent_2);
+
+
+        p = Integer.parseInt(num.getText().toString());
+        i = Integer.parseInt(num1.getText().toString());
+        display.setText(i + " " + p);
     }
 
     //challenge 6 button function, reverses a number from an input
@@ -184,13 +188,24 @@ public class MainActivity extends AppCompatActivity {
         TextView display = findViewById(R.id.display);
         EditText num = findViewById(R.id.entry);
         String num1 = num.toString();
+        int tot = 0;
+        int j = 0;
         char [] num2 = num1.toCharArray();
-        double total = 0;
-        for (int i = num.length(); i > 0; i--){
-            if (num2[i] != '1' || num2[i] != '0') System.exit(1);
-            total = total + (i ^ 2);
+        for (int i = num.length()+1; i > 0; i--){
+            if (num2[i] == 0){
+                tot += 0 * 2^i;
+            }
+            else if (num2[i] == 1){
+                tot += 1 * 2^i;
+            }
+            else {
+                display.setText("binary was incorrect");
+            }
+
+            j++;
+
         }
-        display.setText(total + "");
+        display.setText(tot);
     }
 
     //challenge 9 button function, converts degree of celsius to fahrenheit or vice versa
@@ -232,11 +247,15 @@ public class MainActivity extends AppCompatActivity {
 
     //challenge 11 button function, takes in 3 different numbers and takes the one in middle
     public void c11(View view){
-        TextView display = findViewById(R.id.display);
-        EditText num = findViewById(R.id.entry);
-        String num1 = num.toString();
-        String num2[] = num1.split(" ");
-        display.setText(num2[1]);
+        TextView textView = findViewById(R.id.display);
+        EditText num = findViewById(R.id.Num_Ent_1);
+        EditText num1 = findViewById(R.id.Num_Ent_2);
+        EditText num2 = findViewById(R.id.Num_Ent_3);
+
+        p = Integer.parseInt(num.getText().toString());
+        i = Integer.parseInt(num1.getText().toString());
+        k = Integer.parseInt(num2.getText().toString());
+        textView.setText("" + i);
     }
 
     //challenge 12 button function, checks if a number is a palindrome or not
