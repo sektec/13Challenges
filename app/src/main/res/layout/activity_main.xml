@@ -225,30 +225,44 @@
 
     <EditText
         android:id="@+id/Num_Ent_1"
-        android:layout_width="166dp"
+        android:layout_width="104dp"
         android:layout_height="38dp"
         android:ems="10"
         android:inputType="number"
-        android:text="number input  (A)"
+        android:text="Num A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.948" />
+        app:layout_constraintVertical_bias="0.956" />
 
     <EditText
         android:id="@+id/Num_Ent_2"
-        android:layout_width="180dp"
-        android:layout_height="38dp"
+        android:layout_width="118dp"
+        android:layout_height="41dp"
         android:ems="10"
         android:inputType="number"
-        android:text="number input (B)"
+        android:text="Num B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.948" />
+        app:layout_constraintVertical_bias="0.956" />
+
+    <EditText
+        android:id="@+id/Num_Ent_3"
+        android:layout_width="113dp"
+        android:layout_height="37dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Num C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toEndOf="@+id/Num_Ent_2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.956" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
