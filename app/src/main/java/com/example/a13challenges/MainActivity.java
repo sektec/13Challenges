@@ -186,26 +186,10 @@ public class MainActivity extends AppCompatActivity {
     //challenge 8 button function, takes a number in binary form and converts to decimal
     public void c8(View view){
         TextView display = findViewById(R.id.display);
-        EditText num = findViewById(R.id.entry);
-        String num1 = num.toString();
-        int tot = 0;
-        int j = 0;
-        char [] num2 = num1.toCharArray();
-        for (int i = num.length()+1; i > 0; i--){
-            if (num2[i] == 0){
-                tot += 0 * 2^i;
-            }
-            else if (num2[i] == 1){
-                tot += 1 * 2^i;
-            }
-            else {
-                display.setText("binary was incorrect");
-            }
+        EditText num = findViewById(R.id.Num_Ent_1);
 
-            j++;
-
-        }
-        display.setText(tot);
+        int numOne = Integer.parseInt(num.getText().toString(),2);
+        display.setText(Integer.toString(numOne));
     }
 
     //challenge 9 button function, converts degree of celsius to fahrenheit or vice versa
