@@ -6,11 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="240dp"
+        android:text="open activity 2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/Challenge1B"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="c1"
         android:text="#1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,7 +35,6 @@
         android:id="@+id/Challenge2B"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="c2"
         android:text="#2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +47,6 @@
         android:id="@+id/Challenge3B"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="C3"
         android:text="#3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,7 +59,6 @@
         android:id="@+id/Challenge4B"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="c4"
         android:text="#4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,7 +71,6 @@
         android:id="@+id/Challenge5B"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="c5"
         android:text="#5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -76,7 +84,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="#6"
-        android:onClick="C6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.47"
@@ -89,7 +96,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:onClick="c7"
         android:text="#7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -102,7 +108,6 @@
         android:id="@+id/Challenge8B"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="c8"
         android:text="#8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -116,7 +121,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="#9"
-        android:onClick="c9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.873"
@@ -129,7 +133,6 @@
         android:id="@+id/Challenge10B"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="c10"
         android:text="#10"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -142,7 +145,6 @@
         android:id="@+id/Challenge11B"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="c11"
         android:text="#11"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -156,113 +158,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="#12"
-        android:onClick="c12"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.873"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.284" />
-
-    <TextView
-        android:id="@+id/display"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="output"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.764"
-        android:inputType="textMultiLine"/>
-
-    <TextView
-        android:id="@+id/display1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.737" />
-
-    <TextView
-        android:id="@+id/display2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.71" />
-
-    <TextView
-        android:id="@+id/display3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.683" />
-
-    <EditText
-        android:id="@+id/entry"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="input"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.86" />
-
-    <EditText
-        android:id="@+id/Num_Ent_1"
-        android:layout_width="104dp"
-        android:layout_height="38dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="Num A"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.052"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.956" />
-
-    <EditText
-        android:id="@+id/Num_Ent_2"
-        android:layout_width="118dp"
-        android:layout_height="41dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="Num B"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.956" />
-
-    <EditText
-        android:id="@+id/Num_Ent_3"
-        android:layout_width="113dp"
-        android:layout_height="37dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="Num C"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.529"
-        app:layout_constraintStart_toEndOf="@+id/Num_Ent_2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.956" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
