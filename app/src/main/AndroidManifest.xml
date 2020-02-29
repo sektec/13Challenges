@@ -9,6 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".CH12"></activity>
+        <activity android:name=".CH11" />
+        <activity android:name=".CH10" />
+        <activity android:name=".CH9" />
+        <activity android:name=".CH8" />
+        <activity android:name=".CH7" />
+        <activity android:name=".CH6" />
+        <activity android:name=".CH5" />
+        <activity android:name=".CH4" />
+        <activity android:name=".CH3" />
+        <activity android:name=".CH2" />
+        <activity android:name=".CH1" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
