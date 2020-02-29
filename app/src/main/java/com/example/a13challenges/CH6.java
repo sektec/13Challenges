@@ -15,9 +15,7 @@ public class CH6 extends AppCompatActivity {
         setContentView(R.layout.activity_ch6);
     }
     static int p = 0;
-    static int i = 0;
-    static int k = 0;
-    static double t = 0;
+
     //challenge 6 button function, reverses a number from an input
     public void C6(View view){
         TextView tV3 = findViewById(R.id.display);

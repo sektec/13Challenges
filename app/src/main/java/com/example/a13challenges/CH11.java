@@ -17,7 +17,7 @@ public class CH11 extends AppCompatActivity {
     static int p = 0;
     static int i = 0;
     static int k = 0;
-    static double t = 0;
+
     //challenge 11 button function, takes in 3 different numbers and takes the one in middle
     public void c11(View view){
         TextView textView = findViewById(R.id.display);

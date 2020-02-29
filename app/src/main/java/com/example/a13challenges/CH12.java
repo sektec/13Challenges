@@ -15,9 +15,7 @@ public class CH12 extends AppCompatActivity {
         setContentView(R.layout.activity_ch12);
     }
     static int p = 0;
-    static int i = 0;
-    static int k = 0;
-    static double t = 0;
+
     //challenge 12 button function, checks if a number is a palindrome or not
     public void c12(View view){
         TextView tV = findViewById(R.id.display);

@@ -16,8 +16,7 @@ public class CH5 extends AppCompatActivity {
     }
     static int p = 0;
     static int i = 0;
-    static int k = 0;
-    static double t = 0;
+
     //challenge 5 button function, swaps 2 numbers from a single input
     public void c5(View view){
         TextView display = findViewById(R.id.display);
