@@ -30,8 +30,8 @@ public class CH3 extends AppCompatActivity {
 
         p = Integer.parseInt(c3A.getText().toString());
         i = Integer.parseInt(c3B.getText().toString());
-        int a = MainActivity.p;
-        int b = MainActivity.i;
+        int a = p;
+        int b = i;
         tV3.setText("The Sum of " + a + " and " + b + " is " + (a+b));
         if (a < b) {
             tV4.setText("The difference of " + b + " and " + a + " is " + (b - a));
