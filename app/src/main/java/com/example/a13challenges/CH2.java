@@ -19,7 +19,7 @@ public class CH2 extends AppCompatActivity {
     public void c2(View view){
         TextView display = findViewById(R.id.display);
         EditText num = findViewById(R.id.entry);
-        int num1 = Integer.parseInt(num.getText().toString());
+        double num1 = Integer.parseInt(num.getText().toString());
         if (num1 < 5) display.setText(num1 + " is less than 5.");
         else if (num1 > 5) display.setText(num1 + " is more than 5.");
         else display.setText(num1 + " is equal to 5.");

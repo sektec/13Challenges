@@ -66,60 +66,60 @@ public class MainActivity extends AppCompatActivity {
     b5.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            openCH4();
+            openCH5();
         }
     });
 
-        b6 = findViewById(R.id.Challenge6B);
-        b6.setOnClickListener(new View.OnClickListener() {
+    b6 = findViewById(R.id.Challenge6B);
+    b6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openCH6();
             }
         });
 
-        b7 = findViewById(R.id.Challenge7B);
-        b7.setOnClickListener(new View.OnClickListener() {
+    b7 = findViewById(R.id.Challenge7B);
+    b7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openCH7();
             }
         });
 
-        b8 = findViewById(R.id.Challenge8B);
-        b8.setOnClickListener(new View.OnClickListener() {
+    b8 = findViewById(R.id.Challenge8B);
+    b8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openCH8();
             }
         });
 
-        b9 = findViewById(R.id.Challenge9B);
-        b9.setOnClickListener(new View.OnClickListener() {
+    b9 = findViewById(R.id.Challenge9B);
+    b9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openCH9();
             }
         });
 
-        b10 = findViewById(R.id.Challenge10B);
-        b10.setOnClickListener(new View.OnClickListener() {
+    b10 = findViewById(R.id.Challenge10B);
+    b10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openCH10();
             }
         });
 
-        b11 = findViewById(R.id.Challenge11B);
-        b11.setOnClickListener(new View.OnClickListener() {
+    b11 = findViewById(R.id.Challenge11B);
+    b11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openCH11();
             }
         });
 
-        b12 = findViewById(R.id.Challenge12B);
-        b12.setOnClickListener(new View.OnClickListener() {
+    b12 = findViewById(R.id.Challenge12B);
+    b12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openCH12();
@@ -178,7 +178,4 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, CH12.class);
         startActivity(intent);
     }
-
-
-
 }

@@ -14,8 +14,6 @@ public class CH5 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ch5);
     }
-    static int p = 0;
-    static int i = 0;
 
     //challenge 5 button function, swaps 2 numbers from a single input
     public void c5(View view){
@@ -23,9 +21,8 @@ public class CH5 extends AppCompatActivity {
         EditText num = findViewById(R.id.Num_Ent_1);
         EditText num1 = findViewById(R.id.Num_Ent_2);
 
-
-        p = Integer.parseInt(num.getText().toString());
-        i = Integer.parseInt(num1.getText().toString());
+        double p = Integer.parseInt(num.getText().toString());
+        double i = Integer.parseInt(num1.getText().toString());
         display.setText(i + " " + p);
     }
 }

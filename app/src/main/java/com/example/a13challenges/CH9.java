@@ -24,10 +24,8 @@ public class CH9 extends AppCompatActivity {
         EditText eT = findViewById(R.id.Num_Ent_1);
         EditText eT2 = findViewById(R.id.Num_Ent_2);
 
-        t = Double.parseDouble(eT.getText().toString());
-        p = Integer.parseInt(eT2.getText().toString());
-        double D = t;
-        int T = p;
+        double D = Double.parseDouble(eT.getText().toString());
+        int T = Integer.parseInt(eT2.getText().toString());
         switch (T){
             case 1 :
                 tV.setText("The conversion from Fahrenheit to Celsius of "

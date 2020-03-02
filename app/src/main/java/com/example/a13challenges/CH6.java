@@ -14,14 +14,13 @@ public class CH6 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ch6);
     }
-    static int p = 0;
 
     //challenge 6 button function, reverses a number from an input
     public void C6(View view){
         TextView tV3 = findViewById(R.id.display);
         EditText num = findViewById(R.id.Num_Ent_1);
 
-        p = Integer.parseInt(num.getText().toString());
+        int p = Integer.parseInt(num.getText().toString());
         int inNum = p;
         int reversed = 0;
         while (inNum!=0){

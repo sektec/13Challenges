@@ -14,10 +14,6 @@ public class CH3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ch3);
     }
-    static int p = 0;
-    static int i = 0;
-    static int k = 0;
-    static double t = 0;
 
     //challenge 3 button function, does 4 types of math for 2 numbers (add, sub, div, mul)
     public void C3(View view) {
@@ -28,10 +24,8 @@ public class CH3 extends AppCompatActivity {
         EditText c3A =  findViewById(R.id.Num_Ent_1);
         EditText c3B = findViewById(R.id.Num_Ent_2);
 
-        p = Integer.parseInt(c3A.getText().toString());
-        i = Integer.parseInt(c3B.getText().toString());
-        int a = p;
-        int b = i;
+        double a = Integer.parseInt(c3A.getText().toString());;
+        double b = Integer.parseInt(c3B.getText().toString());;
         tV3.setText("The Sum of " + a + " and " + b + " is " + (a+b));
         if (a < b) {
             tV4.setText("The difference of " + b + " and " + a + " is " + (b - a));
