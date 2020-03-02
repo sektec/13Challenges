@@ -18,6 +18,7 @@ public class CH10 extends AppCompatActivity {
     public void c10 (View view) {
         TextView textView = findViewById(R.id.display);
         EditText numEditText = findViewById(R.id.Num_Ent_1);
+
         int num = Integer.parseInt(numEditText.getText().toString());
         textView.setText(" ");
         for(int i = 1; i <= num; i++){

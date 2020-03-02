@@ -21,8 +21,7 @@ public class CH12 extends AppCompatActivity {
         TextView tV = findViewById(R.id.display);
         EditText num = findViewById(R.id.Num_Ent_1);
 
-        p = Integer.parseInt(num.getText().toString());
-        int nume = p;
+        int nume = Integer.parseInt(num.getText().toString());
         int counter1 = 0;
         int original = nume;
 

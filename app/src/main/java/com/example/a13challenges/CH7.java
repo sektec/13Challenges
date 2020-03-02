@@ -18,6 +18,7 @@ public class CH7 extends AppCompatActivity {
     public void c7 (View view) {
         TextView textView = findViewById(R.id.display);
         EditText numEditText = findViewById(R.id.Num_Ent_1);
+
         String binarynum[] = new java.lang.String[7];
         int num = Integer.parseInt(numEditText.getText().toString());
         if (num >= 64){
