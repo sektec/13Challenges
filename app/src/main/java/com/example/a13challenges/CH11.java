@@ -15,7 +15,7 @@ public class CH11 extends AppCompatActivity {
         setContentView(R.layout.activity_ch11);
     }
 
-    //challenge 11 button function, takes in 3 different numbers and takes the one in middle
+    //challenge 11 button function, takes in 3 different numbers and displays greatest # from them
     public void c11(View view){
         TextView textView = findViewById(R.id.display);
         EditText num = findViewById(R.id.Num_Ent_1);
@@ -25,7 +25,16 @@ public class CH11 extends AppCompatActivity {
         int p = Integer.parseInt(num.getText().toString());
         int i = Integer.parseInt(num1.getText().toString());
         int k = Integer.parseInt(num2.getText().toString());
-        textView.setText("" + i);
+
+        if (p>i){
+            textView.setText("" + p);
+        }
+        else if(i>k){
+            textView.setText("" + i);
+        }
+        else {
+            textView.setText("" + k);
+        }
     }
 
 }

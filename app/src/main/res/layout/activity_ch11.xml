@@ -78,8 +78,8 @@
         android:id="@+id/desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Place integer in each “Num” field to display the one in “NumB”
-        when button #11 is pressed"
+        android:text="Place integer in each “Num” field to display the one that is
+        greater than the rest when button #11 is pressed"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
