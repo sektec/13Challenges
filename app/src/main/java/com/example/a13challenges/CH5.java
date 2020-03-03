@@ -19,10 +19,15 @@ public class CH5 extends AppCompatActivity {
     public void c5(View view){
         TextView display = findViewById(R.id.display);
         EditText num = findViewById(R.id.Num_Ent_1);
-        EditText num1 = findViewById(R.id.Num_Ent_2);
 
-        double p = Integer.parseInt(num.getText().toString());
-        double i = Integer.parseInt(num1.getText().toString());
-        display.setText(i + " " + p);
+        int p = Integer.parseInt(num.getText().toString());
+        int inNum = p;
+        int reversed = 0;
+        while (inNum!=0){
+            int single = inNum % 10;
+            reversed = reversed * 10 + single;
+            inNum/=10;
+        }
+        display.setText("" + reversed);
     }
 }
